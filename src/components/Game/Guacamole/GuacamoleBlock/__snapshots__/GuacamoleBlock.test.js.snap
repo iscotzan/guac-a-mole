@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GuacamoleBlock /> renders without crashing 1`] = `
+<div
+  className="game-block"
+  style={
+    Object {
+      "display": undefined,
+    }
+  }
+>
+  <div
+    className="game__whack"
+  >
+    <button
+      className="avocado"
+      disabled={false}
+      onClick={[Function]}
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -110%)",
+        }
+      }
+    />
+  </div>
+  <div
+    className="game-plate"
+  />
+</div>
+`;

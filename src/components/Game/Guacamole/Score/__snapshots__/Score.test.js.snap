@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Score /> renders without crashing 1`] = `
+<div
+  className="scoreContainer"
+>
+  <h1
+    data-shadow={12345}
+  >
+    12345
+  </h1>
+</div>
+`;

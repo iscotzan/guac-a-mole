@@ -1,0 +1,30 @@
+$clr-blue: blue;
+$clr-white: white;
+$clr-blue-900: darkblue;
+
+.guacamoleLogo {
+  font-family: "Baloo Tamma", cursive;
+  // text-align: center;
+  /* width: 100%; */
+  // margin: 0px auto;
+  color: white;
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+  /* position: absolute; */
+  text-shadow: -1px -1px 0px blue, 3px 3px 0px blue, 6px 6px 0px darkblue;
+}
+//   font-family: 'Baloo Tamma', cursive;
+//   text-align: center;
+//   width: 100%;
+//   margin: 0px auto;
+//   color: $clr-white;
+//   font-size: 3rem;
+//   letter-spacing: 5px;
+//   // top: 50%;
+//   position: absolute;
+//   // margin-top: -40px;
+
+//   text-shadow: -1px -1px 0px $clr-blue,
+//     3px 3px 0px $clr-blue,
+//     6px 6px 0px $clr-blue-900;
+// }

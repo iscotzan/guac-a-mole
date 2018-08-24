@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DifficultyMeter /> renders without crashing 1`] = `
+<div
+  className="difficultyLvlContainer"
+>
+  <div
+    className="difficultyLvlText"
+  >
+    lvl 
+    3
+  </div>
+  <Progress
+    className="difficultyCircle"
+    gapPosition="top"
+    percent={50}
+    prefixCls="rc-progress"
+    strokeColor="#db2828"
+    strokeLinecap="round"
+    strokeWidth="6"
+    style={Object {}}
+    trailColor="#D9D9D9"
+    trailWidth={1}
+  />
+</div>
+`;

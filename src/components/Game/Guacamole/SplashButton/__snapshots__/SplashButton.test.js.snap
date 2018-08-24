@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SplashButton /> renders without crashing 1`] = `
+<div>
+  <button
+    className="splash-button"
+    onClick={[Function]}
+  >
+    buttonText
+    <div
+      className="splash-button__horizontal"
+    />
+    <div
+      className="splash-button__vertical"
+    />
+  </button>
+</div>
+`;

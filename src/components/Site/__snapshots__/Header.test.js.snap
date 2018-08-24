@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> renders without crashing 1`] = `
+<Menu
+  borderless={true}
+  className="mainMenuContainer"
+  id="mainMenu"
+>
+  <Container>
+    <MenuItem>
+      <LocalizedComponent />
+    </MenuItem>
+    <MenuItem
+      className="effect-underline"
+    >
+      <Link
+        replace={false}
+        to="./"
+      >
+        <Translate
+          id="translations.guacamoleGame"
+        >
+          Guacamole
+        </Translate>
+      </Link>
+    </MenuItem>
+    <MenuItem
+      className="effect-underline"
+    >
+      <Link
+        replace={false}
+        to="./about"
+      >
+        <Translate
+          id="translations.about"
+        >
+          About
+        </Translate>
+      </Link>
+    </MenuItem>
+  </Container>
+</Menu>
+`;

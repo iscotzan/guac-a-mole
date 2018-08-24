@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GameOver /> renders without crashing 1`] = `
+<div
+  className="game-over-container centered container-style"
+>
+  <Grid
+    centered={true}
+  >
+    <div
+      className="show-div textAndScores"
+    >
+      <h1>
+        <Translate
+          id="translations.gameOver"
+        >
+          Game Over
+        </Translate>
+      </h1>
+      <div>
+        <h3>
+          <Translate
+            id="translations.yourScore"
+          >
+            Your Score
+          </Translate>
+          :
+          7777
+        </h3>
+        <h5>
+          <Translate
+            id="translations.highScore"
+          >
+            High Score
+          </Translate>
+          :
+          10000
+        </h5>
+      </div>
+    </div>
+    <div>
+      <SplashButton
+        buttonText={
+          <Translate
+            id="translations.play"
+          >
+            Play
+          </Translate>
+        }
+      />
+    </div>
+  </Grid>
+</div>
+`;

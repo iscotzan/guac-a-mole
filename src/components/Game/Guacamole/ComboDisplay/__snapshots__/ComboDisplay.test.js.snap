@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ComboDisplay /> renders without crashing 1`] = `
+<div
+  className="comboDisplayContainer"
+>
+  <div
+    className="comboDisplayText"
+  >
+    x
+    1
+  </div>
+  <Progress
+    className="comboDisplayCircle"
+    gapPosition="top"
+    percent={16.666666666666664}
+    prefixCls="rc-progress"
+    strokeColor="#91ff3f"
+    strokeLinecap="round"
+    strokeWidth="6"
+    style={Object {}}
+    trailColor="#D9D9D9"
+    trailWidth={1}
+  />
+</div>
+`;

@@ -1,0 +1,8 @@
+.guacamoleLogo {
+  font-family: "Baloo Tamma", cursive;
+  /* width: 100%; */
+  color: white;
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+  /* position: absolute; */
+  text-shadow: -1px -1px 0px blue, 3px 3px 0px blue, 6px 6px 0px darkblue; }

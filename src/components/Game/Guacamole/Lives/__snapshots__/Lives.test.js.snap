@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Lives /> renders without crashing 1`] = `
+<div
+  className="livesContainer"
+>
+  <span
+    className="singleLife"
+    key="0"
+  >
+    *
+  </span>
+  <span
+    className="singleLife"
+    key="1"
+  >
+    *
+  </span>
+  <span
+    className="singleLife"
+    key="2"
+  >
+    *
+  </span>
+</div>
+`;

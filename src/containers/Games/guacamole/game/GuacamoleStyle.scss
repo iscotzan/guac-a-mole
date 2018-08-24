@@ -1,0 +1,402 @@
+#guacamoleGame {
+  // background: rgba(0, 0, 0, 0.65);
+  // background: rgba(245, 104, 11, 0.61);
+  background-image: url(../../../../assets/images/pexels-photo-168453.jpeg);
+  background-size: cover;
+  height: 85%;
+  overflow-y: hidden; // hide vertical
+  overflow-x: hidden; // hide horizontal
+}
+.guacamoleBackground {
+  background-image: url(../../../../assets/images/pexels-photo-740584.jpeg);
+  // background-color: Transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container-style {
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  color: white;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.show-div {
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  z-index: 1;
+}
+.hide-div {
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.game-over-container {
+  width: 70%;
+  height: 60%;
+  .textAndScores {
+    color: white;
+    font-family: "Righteous", serif;
+    font-size: 2em;
+    text-shadow: 0.03em 0.03em 0 hsla(230, 40%, 50%, 1);
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    width: 100%;
+  }
+}
+
+.game-container {
+  height: 70%;
+  cursor: url(../../../../assets/game/Fork.ico), auto;
+  button {
+    cursor: url(../../../../assets/game/Fork.ico), auto;
+  }
+}
+.game-score-container {
+  height: 20%;
+  // box-shadow: 1px 1px 1px salmon;
+  background: rgba(0, 0, 0, 0.5);
+  // background: rgba(165, 171, 9, 0.5);
+  .forfeitButton {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+  }
+  .livesContainer {
+    position: absolute;
+    right: 1rem;
+  }
+  .comboDisplayContainer {
+    position: relative;
+    bottom: 12px;
+    padding-right: 0.5rem;
+
+    .comboDisplayCircle {
+      width: 4rem;
+    }
+    .comboDisplayText {
+      position: relative;
+      bottom: -38px;
+      left: 29%;
+      font-size: 1.5rem;
+    }
+    .rc-progress-circle-path {
+      transition: all 1.2s !important;
+    }
+  }
+  .difficultyLvlContainer {
+    position: relative;
+    bottom: 12px;
+    padding-right: 6rem;
+
+    .difficultyCircle {
+      width: 4rem;
+    }
+    .difficultyLvlText {
+      position: relative;
+      bottom: -38px;
+      left: 18%;
+      font-size: 1rem;
+    }
+    .rc-progress-circle-path {
+      transition: all 1.2s !important;
+    }
+  }
+  .scoreContainer {
+    position: absolute;
+    min-width: 6rem;
+    text-align: center;
+    // left: 11.5rem;
+    h1 {
+      display: inline-block;
+      color: white;
+      font-family: "Righteous", serif;
+      font-size: 2em;
+      text-shadow: 0.03em 0.03em 0 hsla(230, 40%, 50%, 1);
+    }
+  }
+  // .metersContainer{
+  //   position: absolute;
+  //   left: 1rem;
+  // }
+}
+
+.pointsMade {
+  position: absolute;
+  top: calc(50% - 150px);
+  left: calc(50% - 150px);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff,
+    0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
+}
+.timerContainer {
+  position: relative;
+  bottom: 12px;
+  padding-left: 6rem;
+  .timeCircle {
+    width: 4rem;
+  }
+  .countText {
+    position: relative;
+    bottom: -38px;
+    left: 34%;
+    font-size: 1rem;
+  }
+}
+
+.game-block {
+  text-align: center;
+  overflow: hidden;
+  float: left;
+  height: 14vh;
+  margin: 1%;
+  position: relative;
+  width: 23%;
+  // background: #555;
+}
+.game-row {
+  // width: 90%;
+  width: 90%;
+}
+.game-plate {
+  //   background: green;
+  background: url(../../../../assets/plate.svg);
+  background-repeat: no-repeat;
+  bottom: 0px;
+  left: 0;
+  height: 100%;
+  position: absolute;
+  background-size: 100% 150%;
+  width: 100%;
+  z-index: 1;
+  pointer-events: none;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.game__mole {
+  background-image: url(../../../../assets/avocado2.svg);
+  background-color: Transparent;
+  background-size: 3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  overflow: hidden;
+  right: 10%;
+  width: 70%;
+  top: 14%;
+  height: 85%;
+  position: absolute;
+  z-index: 2;
+  transform: translate(0, 50%);
+  transition: all 0.3s;
+  //   cursor: crosshair;
+}
+.game__bomb {
+  background-image: url(../../../../assets/game/nachos2.png);
+  background-color: Transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  overflow: hidden;
+  right: 12%;
+  width: 70%;
+  top: 26%;
+  background-size: 6rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 85%;
+  position: absolute;
+  z-index: 2;
+  transform: translate(0, 50%);
+  transition: all 0.1s;
+  //   cursor: crosshair;
+}
+.game__whack {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+.game__cross {
+  background-image: url(../../../../assets/greenSplatter.svg);
+  background-color: Transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  overflow: hidden;
+  right: 10%;
+  width: 70%;
+  top: 14%;
+  background-size: 5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 85%;
+  position: absolute;
+  z-index: 2;
+  // animation: skew 3s infinite;
+  // animation-direction: alternate;
+  // opacity: 0.  7;
+  // transform: translate(0, 50%), skew(20deg);
+  transform: translate(0, 50%);
+  transition: all 0.2s;
+}
+.game__bomb__cross {
+  background-image: url(../../../../assets/crumb.png);
+  background-image: url(../../../../assets/comicBoom.png);
+  background-color: Transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  overflow: hidden;
+  right: 10%;
+  width: 70%;
+  top: 14%;
+  background-size: 6rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 85%;
+  position: absolute;
+  z-index: 2;
+  transform: translate(0, 50%);
+  transition: all 0.2s;
+}
+.hiddenMole {
+  opacity: 0;
+  background-color: Transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  overflow: hidden;
+  right: 10%;
+  width: 70%;
+  top: 14%;
+  background-size: 6rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 85%;
+  position: absolute;
+  z-index: 2;
+  transform: translate(0, 50%);
+  transition: all 0.5s;
+}
+.singleLife {
+  display: inline-block;
+  // animation: skew 3s infinite;
+  // transform: skew(20deg);
+  // animation-direction: alternate;
+  // opacity: 0.7;
+}
+
+@keyframes skew {
+  0% {
+    transform: skewX(3deg);
+  }
+  100% {
+    transform: skewX(-3deg);
+  }
+}
+@media (min-width: 1024px) and (max-width: 1280px) and (orientation: landscape) {
+  .game-row {
+    width: 55%;
+  }
+  .game-score-container .difficultyLvlContainer {
+    position: relative;
+    bottom: 12px;
+    padding-right: 11rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .game-row {
+    width: 55%;
+  }
+  .game-score-container .difficultyLvlContainer {
+    position: relative;
+    bottom: 12px;
+    padding-right: 11rem;
+  }
+}
+
+// // /*
+// //   ##Device = Tablets, Ipads (portrait)
+// //   ##Screen = B/w 768px to 1024px
+// // */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .game-row {
+    width: 55%;
+  }
+  .game-score-container .difficultyLvlContainer {
+    position: relative;
+    bottom: 12px;
+    padding-right: 11rem;
+  }
+}
+
+// /*
+//   ##Device = Tablets, Ipads (landscape)
+//   ##Screen = B/w 768px to 1024px
+// */
+
+@media (min-width: 920px) and (max-width: 1024px) and (orientation: landscape) {
+  .game-row {
+    width: 55%;
+  }
+  .game-score-container .difficultyLvlContainer {
+    position: relative;
+    bottom: 12px;
+    padding-right: 11rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 920px) and (orientation: landscape) {
+  .game-row {
+    width: 55%;
+  }
+  .game-score-container .difficultyLvlContainer {
+    position: relative;
+    bottom: 12px;
+    padding-right: 11rem;
+  }
+}
+@media (max-width: 768px) {
+  .scoreContainer {
+    // position: absolute;
+    // min-width: 6rem;
+    // text-align: center;
+    left: 11.5rem;
+  }
+}

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GuacamoleLogo /> renders without crashing 1`] = `
+<h2
+  className="guacamoleLogo"
+>
+  Guacamole
+</h2>
+`;

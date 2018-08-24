@@ -5,7 +5,7 @@ Created for a technical test & educational purposes\
 [Demo](https://guac-a-mole.herokuapp.com/)
 
 ##### What's in it?
-- Responsive React Web Application
+- Responsive React Web Application (generated with create-react-app)
 - Testing with Jest  
 - Languages Support via react-localize-redux
 - Redux configuration for future scaling *(currently not utilized)*

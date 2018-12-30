@@ -9,6 +9,6 @@ Created for a technical test & educational purposes\
 - Testing with Jest  
 - Languages Support via react-localize-redux
 - Redux configuration for future scaling *(currently not utilized)*
- - Free Images thanks to [pexels.com](https://www.pexels.com) and [kisspng.com](https://www.kisspng.com/)
+ - Free Images thanks to [pexels.com](https://www.pexels.com) & [kisspng.com](https://www.kisspng.com/)
 
 ***Crush Those Avocados!***
